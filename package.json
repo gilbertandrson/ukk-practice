@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/gilbertandrson/ukk-practice#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mariadb": "^2.5.3",
