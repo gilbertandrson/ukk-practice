@@ -1,9 +1,15 @@
 const router = require('express').Router();
-const userRouter = require('./user-routes.js')
-const cucianRouter = require('./cucian-routes.js')
+const UserRouter = require('./user-routes.js')
+const MemberRouter = require('./member-routes.js')
+const OutletRouter = require('./outlet-routes.js')
+const PaketRouter = require('./paket-routes.js')
+const TransaksiRouter = require('./transaksi-routes.js')
+const DetailRouter = require('./detail.js')
 
-
-router.use('/cucian',cucianRouter)
-router.use('/user', userRouter)
-
+router.use('/user', UserRouter)
+router.use('/member', MemberRouter)
+router.use('/outlet', OutletRouter)
+router.use('/paket', PaketRouter)
+router.use('/transaksi', TransaksiRouter)
+router.use('/detail', DetailRouter)
 module.exports = router
